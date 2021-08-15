@@ -30,6 +30,7 @@ members = [
   "p23",
   "p24",
   "p25",
+  "p31",
 ]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
