@@ -25,6 +25,11 @@ members = [
   "p18",
   "p19",
   "p20",
+  "p21",
+  "p22",
+  "p23",
+  "p24",
+  "p25",
 ]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
