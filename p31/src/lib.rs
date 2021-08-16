@@ -1,5 +1,5 @@
 /// Determine whether a given integer number is prime.
-fn is_prime(n: usize) -> bool {
+pub fn is_prime(n: usize) -> bool {
     match n {
         0 | 1 => false,
         _ => {
