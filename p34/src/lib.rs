@@ -4,25 +4,8 @@ use std::collections::HashSet;
 /// Calculate Euler's totient function phi(m).
 /// Euler's so-called totient function phi(m) is defined as the number of positive integers r (1 <= r < m) that are coprime to m.
 /// Example: m = 10: r = 1,3,7,9; thus phi(m) = 4. Note the special case: phi(1) = 1.
-
-pub fn prime_factorize(n: u32) -> Vec<u32> {
-    let mut tmp = n;
-    let mut ret: Vec<u32> = vec![];
-    for i in 2..=(n / 2 + 1) {
-        loop {
-            if tmp % i == 0 {
-                ret.push(i);
-                tmp /= i;
-            } else {
-                break;
-            }
-        }
-    }
-    ret
-}
-
 pub fn totient_phi(n: u32) -> u32 {
-    let set: HashSet<u32> = prime_factorize(n).into_iter().collect();
+    let set: HashSet<u32> = p35::prime_factorize(n).into_iter().collect();
     let mut ret = Fraction::from(n);
     for x in set {
         ret *= Fraction::from(1) - Fraction::new(1 as u32, x as u32);

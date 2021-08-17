@@ -7,4 +7,5 @@ edition = "2018"
 
 [dependencies]
 p31 = { path = "../p31" }
+p35 = { path = "../p35" }
 fraction = "0.8.0"
