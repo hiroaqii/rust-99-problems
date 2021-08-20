@@ -38,6 +38,7 @@ members = [
   "p36",
   "p37",
   "p38",
+  "p39",
 ]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
