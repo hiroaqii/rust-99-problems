@@ -1,9 +1,9 @@
 /// Determine whether a given integer number is prime.
-pub fn is_prime(n: usize) -> bool {
+pub fn is_prime(n: u32) -> bool {
     match n {
         0 | 1 => false,
         _ => {
-            for x in 2..=(n as f64).sqrt() as usize {
+            for x in 2..=(n as f64).sqrt() as u32 {
                 if n % x == 0 {
                     return false;
                 }
